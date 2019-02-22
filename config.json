@@ -1,0 +1,57 @@
+{
+    "field_name": "user_id",
+    "default_role_name": "default",
+    "users": {
+        "u111111": {
+            "id": "u111111",
+            "user_id": "u1",
+            "roles": [
+                "r1",
+                "r2"
+            ]
+        },
+        "u222222": {
+            "id": "u222222",
+            "user_id": "u2",
+            "roles": []
+        }
+    },
+    "roles": {
+        "r1": {
+            "id": "r1",
+            "name": "role 1",
+            "permissions": [
+                "p1"
+            ]
+        },
+        "r2": {
+            "id": "r2",
+            "name": "role 2",
+            "permissions": [
+                "p2"
+            ]
+        }
+    },
+    "permissions": {
+        "p1": {
+            "id": "p1",
+            "resource": "1111",
+            "action": "view"
+        },
+        "p2": {
+            "id": "p2",
+            "resource": "2222",
+            "action": "view"
+        }
+    },
+    "permit_urls": [
+        {
+            "uri": "/example/id",
+            "p": "p1"
+        },
+        {
+            "uri": "/example/name",
+            "p": "p2"
+        }
+    ]
+}
