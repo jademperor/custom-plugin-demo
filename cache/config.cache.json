@@ -1,0 +1,12 @@
+{
+    "rules": [
+        {
+            "regexp": "./*",
+            "enabled": false
+        },
+        {
+            "regexp": "^/example/id$",
+            "enabled": true
+        }
+    ]
+}
